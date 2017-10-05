@@ -7,7 +7,7 @@
 
 <p>
   <strong>Alcohol:</strong>
-  <%= @drink.alcohol_id %>
+  <%= link_to @alcohol.name, alcohol_path(@alcohol) %>
 </p>
 
 <p>
@@ -17,3 +17,6 @@
 
 <%= link_to 'Edit', edit_drink_path(@drink) %> |
 <%= link_to 'Back', drinks_path %>
+
+
+
