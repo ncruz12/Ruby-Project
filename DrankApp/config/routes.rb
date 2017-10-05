@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/welcome', to: 'welcome#index'
   resources :drinks
+  resources :alcohols, only: [:index, :show]
 end

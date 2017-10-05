@@ -1,0 +1,10 @@
+<h1><%= @alcohol.name %></h1>
+
+<ul>
+  <% @drinks.each do |drink| %>
+  <li><%= drink.name%></li>
+  <%end%>
+</ul>
+
+<h3><%= link_to 'View Drinkssss', drinks_path %></h3>
+<%= link_to "Back to Alcohols Page", alcohols_path %>
