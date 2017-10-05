@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DrankApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header>
+    <h1>Get your drink on!</h1>
+    <ul>
+      <li><%= link_to 'View All Drinkssss', drinks_path %></li>
+    </ul>
+  </header>
+    <%= yield %>
+  <footer>
+    <p>Drinks App 2017</p>
+  </footer>
+  </body>
+</html>
