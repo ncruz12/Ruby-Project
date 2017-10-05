@@ -10,6 +10,7 @@ class DrinksController < ApplicationController
   # GET /drinks/1
   # GET /drinks/1.json
   def show
+    @alcohol = @drink.alcohol
   end
 
   # GET /drinks/new
